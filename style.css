@@ -1,0 +1,95 @@
+html,body,ul,li,ol,dl,dd,dt,p,form,h1,h2,h3,h4,h5,h6,table,th,td {
+	margin:0;
+	padding:0;
+}
+
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	position: absolute;
+	width: 100px;
+	height: 400px;
+	z-index: 999;
+	margin: 40px 0 0 40px;
+}
+
+header h1 a {
+	display: block;
+	position: relative;
+	text-indent: 999em;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	border-radius: 999em;
+	background-image: url("./logo/rese_logo_white.svg");
+	background-color: rgba(255, 255, 255, 0.5);
+	-moz-transition: all 0.3s; 
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+header h1 a:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+	-moz-transition: all 0.3s; 
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#contacts {
+	margin: 20px 0;
+}
+#contacts ul li {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	list-style: none;
+	text-align: right;
+}
+#contacts ul li a {
+	display: block;
+	position: relative;
+	width: 100px;
+	margin-top: 4px;
+	padding: 6px 0;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 'Asap', sans-serif;
+	font-style: italic;
+	font-weight: 400px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+#contacts ul li a::after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 20px;
+	border-radius: 1px;
+	background-color: rgba(255, 255, 255, 0);
+	-moz-transition: all 0.3s cubic-bezier(0, 0, 0, 1); 
+	-webkit-transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+	-ms-transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+	-o-transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+	transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+}
+#contacts ul li:hover a::after {
+	width: 100px;
+	background-color: rgba(255, 255, 255, 0.6);
+	-moz-transition: all 0.3s cubic-bezier(0, 0, 0, 1); 
+	-webkit-transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+	-ms-transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+	-o-transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+	transition: all 0.3s cubic-bezier(0, 0, 0, 1);
+}
